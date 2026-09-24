@@ -132,6 +132,8 @@
     .project-copy { display: grid; grid-template-columns: .9fr 1.1fr; column-gap: clamp(32px, 8vw, 135px); align-items: end; min-width: 0; margin: 34px 0 46px; padding-bottom: 34px; border-bottom: 1px solid var(--line); }
     .project-number { grid-column: 1 / -1; margin: 0 0 23px; color: #77736c; font: 10px ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: .16em; }
     .project-copy h2 { margin: 0; font-family: Georgia, "Times New Roman", "Songti SC", serif; font-size: clamp(52px, 8vw, 128px); line-height: .82; font-weight: 400; color: var(--blush); }
+    .project-copy h2 { white-space: nowrap; font-size: clamp(38px, 5.4vw, 88px); letter-spacing: -.045em; }
+    #portfolio-changan .project-copy h2 { font-size: clamp(32px, 4.4vw, 72px); letter-spacing: -.08em; }
     .project-type { display: inline-block; margin-top: 23px; padding: 7px 10px; border: 1px solid rgba(227,154,179,.55); color: var(--blush); font: 10px ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: .1em; }
     .project-copy .project-type, .project-copy .play-button { grid-column: 1; }
     .project-copy > p:not(.project-number) { grid-column: 2; grid-row: 2 / span 2; max-width: 470px; margin: 0; color: #d0d0cd; font-size: 13px; line-height: 1.85; }
@@ -195,6 +197,7 @@
       .timeline-item { grid-template-columns: 90px 1fr; gap: 25px; }
       .project-page .page-inner { padding: 100px 0; }
       .project-copy { display: grid; grid-template-columns: 1fr; gap: 0; margin: 28px 0 36px; padding-bottom: 27px; }
+      .project-copy h2, #portfolio-changan .project-copy h2 { font-size: clamp(35px, 11vw, 62px); letter-spacing: -.06em; }
       .project-copy > p:not(.project-number) { grid-column: 1; grid-row: auto; margin-top: 22px; }
       .project-copy .project-meta { grid-column: 1; }
       .project-copy .project-tagline { grid-column: 1; }
@@ -202,7 +205,7 @@
       .project-gallery::before { margin-bottom: 10px; }
       .project-stills { grid-template-columns: repeat(2, 1fr); gap: 6px; }
       .project-stills button:first-child { grid-column: span 2; grid-row: auto; aspect-ratio: 1.5; }
-      .project-copy h2 { font-size: clamp(58px, 16vw, 100px); }
+      .project-copy h2, #portfolio-changan .project-copy h2 { font-size: clamp(30px, 10vw, 52px); letter-spacing: -.06em; }
       .contact-grid { margin-top: 65px; }
     }
     @media (max-width: 480px) {
