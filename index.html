@@ -77,6 +77,7 @@
     .resume-pagehead { display: flex; justify-content: space-between; align-items: center; color: #b3b9b5; font: 9px ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: .13em; text-transform: uppercase; }
     .resume-pagehead span:last-child { color: var(--pink); }
     .resume-board { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(42px, 8vw, 130px); margin-top: 42px; padding: clamp(24px, 4vw, 55px); background: rgba(37,38,42,.88); border: 1px solid rgba(241,217,223,.26); }
+    .resume-board > div:last-child { padding-top: 34px; }
     .resume-aside { padding-top: 0; display: flex; flex-direction: column; justify-content: space-between; }
     .resume-aside .eyebrow { margin-bottom: 14px; }
     .resume-aside .section-title { font-size: clamp(52px, 7vw, 100px); }
@@ -89,11 +90,11 @@
     .on-set-photo figcaption { padding: 10px 12px 11px; color: var(--pink); font: 9px ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: .12em; }
     .resume-bio { max-width: 390px; margin-top: 28px; color: #c1c4c1; font-size: 12px; line-height: 1.85; }
     .resume-sheet { border-top: 1px solid var(--ink); }
-    .resume-sheet .group-label { margin: 22px 0 0; font: 10px ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: .16em; text-transform: uppercase; }
-    .info-row { display: grid; grid-template-columns: 130px 1fr; gap: 20px; padding: 17px 0; border-bottom: 1px solid var(--line); }
-    .info-row dt { color: #a7b0aa; font: 10px ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: .12em; text-transform: uppercase; }
-    .info-row dd { margin: 0; font-family: Georgia, "Songti SC", serif; font-size: 20px; line-height: 1.35; }
-    .info-row dd small { display: block; margin-top: 5px; color: #aeb9b1; font: 12px/1.6 Arial, sans-serif; }
+    .resume-sheet .group-label { margin: 22px 0 0; font: 11px ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: .16em; text-transform: uppercase; }
+    .info-row { display: grid; grid-template-columns: 130px 1fr; gap: 20px; padding: 18px 0; border-bottom: 1px solid var(--line); }
+    .info-row dt { color: #a7b0aa; font: 11px ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: .12em; text-transform: uppercase; }
+    .info-row dd { margin: 0; font-family: Georgia, "Songti SC", serif; font-size: 22px; line-height: 1.35; }
+    .info-row dd small { display: block; margin-top: 6px; color: #aeb9b1; font: 13px/1.6 Arial, sans-serif; }
     .manifesto { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 28px; }
     .manifesto span { display: grid; min-height: 86px; padding: 13px; place-items: center; border: 1px solid rgba(227,154,179,.6); border-radius: 50%; color: var(--blush); font: 10px ui-monospace, SFMono-Regular, Menlo, monospace; text-align: center; }
     .skill-line { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 22px; }
@@ -205,6 +206,7 @@
       .home-index { left: 20px; right: auto; bottom: 25px; }
       .resume-layout, .works-index .page-inner, .project-layout { grid-template-columns: 1fr; gap: 50px; }
       .resume-board { grid-template-columns: 1fr; gap: 38px; margin-top: 28px; padding: 22px; }
+      .resume-board > div:last-child { padding-top: 0; }
       .resume-pagehead { font-size: 8px; }
       .portrait-frame { margin-top: 30px; width: min(220px, 70vw); }
       .experience-head { display: block; }
