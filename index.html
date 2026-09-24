@@ -272,6 +272,10 @@
     .resume-pagehead, .chapter-meta { color: #738090; border-color: var(--line); }
     .resume-pagehead span:last-child { color: var(--blue); }
     .resume-board { gap: clamp(28px, 5vw, 78px); margin-top: 26px; padding: 0; background: transparent; border: 0; }
+    .resume-board { grid-template-columns: .82fr 1.18fr; }
+    .on-set-photo { width: min(230px, 100%); margin-top: 16px; }
+    .on-set-photo img { aspect-ratio: 4 / 5; }
+    .resume-bio { margin-top: 16px; }
     .resume-aside .section-title { color: var(--ink); }
     .on-set-photo { border-color: rgba(21,24,29,.14); background: #c9d6e2; }
     .on-set-photo figcaption { color: var(--blue); }
@@ -304,8 +308,14 @@
     .project-page { background: linear-gradient(145deg, #e6edf4, #cbd9e7); color: var(--ink); background-image: none; }
     .project-page:nth-of-type(2n) { background: linear-gradient(145deg, #d9e5f0, #f2f5f8); }
     .project-page .page-inner { padding: clamp(36px, 4.6vw, 72px); }
+    .project-layout { display: grid; grid-template-columns: .86fr 1.14fr; gap: clamp(32px, 5vw, 78px); align-items: center; }
     .project-page .page-inner::before, .project-gallery::before { color: #7b8998; border-color: var(--line); }
-    .project-copy { margin: 24px 0 28px; padding-bottom: 24px; border-bottom-color: var(--line); }
+    .project-copy { display: block; margin: 0; padding-bottom: 0; border-bottom: 0; }
+    .project-copy .project-type, .project-copy .play-button, .project-copy > p:not(.project-number), .project-meta, .project-tagline { display: block; }
+    .project-copy h2 { font-size: clamp(48px, 6vw, 92px); }
+    .project-copy > p:not(.project-number) { margin-top: 20px; }
+    .project-meta { margin-top: 20px; }
+    .project-tagline { margin-top: 16px; }
     .project-number { color: #7b8998; }
     .project-copy h2 { color: var(--ink); }
     .project-type { border-color: rgba(23,105,255,.4); color: #426da5; }
@@ -334,6 +344,7 @@
       .page-inner, .home-inner { width: calc(100% - 40px); aspect-ratio: auto; min-height: 0; padding: 32px 24px 38px; border-radius: 24px; }
       .home-inner { min-height: 70svh; }
       .resume-board, .works-index .page-inner, .project-layout { grid-template-columns: 1fr; }
+      .project-layout { display: block; }
       .resume-board { gap: 28px; }
       .project-page .page-inner { padding: 32px 24px 42px; }
       .project-copy { margin-top: 18px; }
