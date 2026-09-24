@@ -163,6 +163,20 @@
     .contact-grid small { display: block; margin-bottom: 9px; color: var(--pink); font: 10px ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: .12em; text-transform: uppercase; }
     .contact-grid span { font-family: Georgia, "Songti SC", serif; font-size: 19px; }
     .copyright { margin: 90px 0 0; color: #7d8589; font: 10px ui-monospace, SFMono-Regular, Menlo, monospace; }
+    /* Keep the scroll sequence aligned with the works directory. */
+    #scroll-container { display: flex; flex-direction: column; }
+    #home { order: 1; }
+    #resume { order: 2; }
+    #campus { order: 3; }
+    #career { order: 4; }
+    #portfolio-index { order: 5; }
+    #portfolio-mother { order: 6; }
+    #portfolio-changan { order: 7; }
+    #portfolio { order: 8; }
+    #portfolio-mao-xian { order: 9; }
+    #portfolio-butterfly { order: 10; }
+    #portfolio-wenqiang-nanqu { order: 11; }
+    #contact { order: 12; }
     .modal, .lightbox { position: fixed; z-index: 50; inset: 0; display: none; place-items: center; padding: 30px; background: rgba(7,7,7,.93); }
     .modal.open, .lightbox.open { display: grid; }
     .modal video { width: min(960px, 94vw); max-height: 82vh; background: #000; }
