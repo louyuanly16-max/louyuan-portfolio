@@ -300,7 +300,7 @@
     <section class="page contact" id="contact"><div class="page-inner"><p class="eyebrow">END CREDIT / 08</p><h2 class="contact-title">联系<span>我</span></h2><div class="contact-grid"><a href="mailto:3224544419@qq.com"><small>e-mail</small><span>3224544419@qq.com</span></a><div><small>social</small><span>18868184656</span></div><div><small>based in</small><span>China</span></div></div><p class="copyright">© 2026 娄缘 · Personal Portfolio</p></div></section>
   </main>
 
-  <div class="modal" id="video-modal" role="dialog" aria-modal="true" aria-label="作品视频"><button class="close-modal" id="close-video" aria-label="关闭视频">×</button><video id="video-player" controls playsinline preload="metadata"></video></div>
+  <div class="modal" id="video-modal" role="dialog" aria-modal="true" aria-label="作品视频"><button class="close-modal" id="close-video" aria-label="关闭视频">×</button><video id="video-player" controls controlsList="nodownload noplaybackrate" disablePictureInPicture disableremoteplayback playsinline preload="metadata"></video></div>
   <div class="lightbox" id="image-lightbox" role="dialog" aria-modal="true" aria-label="静帧预览"><button class="close-modal" id="close-image" aria-label="关闭图片预览">×</button><img id="lightbox-image" alt="作品静帧大图"></div>
 
   <script>
@@ -332,6 +332,8 @@
     sections.forEach(section => observer.observe(section));
     navLinks.forEach(link => link.addEventListener('click', () => { document.getElementById('nav-links').classList.remove('open'); document.getElementById('nav-menu').setAttribute('aria-expanded', 'false'); }));
     document.getElementById('nav-menu').addEventListener('click', () => { const links = document.getElementById('nav-links'); const open = links.classList.toggle('open'); document.getElementById('nav-menu').setAttribute('aria-expanded', String(open)); });
+    videoPlayer.addEventListener('contextmenu', event => event.preventDefault());
+    videoPlayer.addEventListener('dragstart', event => event.preventDefault());
 
     // Scroll-linked motion: restrained parallax on desktop, graceful fallback on mobile/reduced motion.
     if (window.gsap && window.ScrollTrigger) {
